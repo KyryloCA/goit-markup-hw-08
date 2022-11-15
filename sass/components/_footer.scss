@@ -1,0 +1,200 @@
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: #2F303A;
+}
+
+
+footer .container {
+    display: flex;
+    align-items: baseline;
+}
+
+footer b {
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    color: var(--primary-bg-color);
+
+
+}
+
+.footer__logo {
+    color: var(--primary-bg-color);
+    margin-right: 0px;
+    margin-bottom: 20px;
+}
+
+.footer .wrapper {
+    display: flex;
+
+}
+
+footer p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+
+footer .item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+footer .connect {
+    margin-left: 70px;
+}
+
+.socials {
+    display: flex;
+}
+
+.socials-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.socials a {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-bg-color);
+
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-repeat: no-repeat;
+
+    transition: background-color var(--cubic-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+
+}
+
+.socials.team a {
+    fill: var(--primary-bg-color);
+
+
+}
+
+
+
+.gallery-flex-big .socials a:hover .icon,
+.gallery-flex-big .socials a:focus .icon {
+    fill: var(--primary-bg-color);
+}
+
+.gallery-flex-big .ocupation {
+    margin-bottom: 16px;
+}
+
+footer .socials .icon {
+    fill: #fff;
+}
+
+
+/*
+.socials .instagramm {
+    background-image: url(../images/instagram.svg);
+}
+
+.socials .twitter {
+    background-image: url(../images/twitter.svg);
+}
+
+.socials .facebook {
+    background-image: url(../images/facebook.svg);
+}
+
+.socials .linkedin {
+    background-image: url(../images/linkedin.svg);
+} */
+
+/* 
+.gallery .item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.gallery .item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+} */
+
+/* --------footer-subscribe------ */
+footer .subscribe {
+    margin-left: 93px;
+}
+
+.subscribe form {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.subscribe .mail {
+    width: 358px;
+    height: 100%;
+    margin-right: 12px;
+    /* background-color: yellow; */
+}
+
+.subscribe .mail input {
+    display: block;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    line-height: 20px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color var(--cubic-function), border-color var(--cubic-function);
+
+    &:focus,
+    &:hover {
+        color: var(--primary-bg-color);
+        border: 1px solid var(--accent-color);
+    }
+
+
+
+}
+
+
+
+.subscribe .mail input:not(:placeholder-shown) {
+    color: var(--primary-bg-color);
+    border: 1px solid var(--accent-color);
+}
+
+.subscribe .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 100%;
+
+    &:hover,
+    &:focus {
+        background-color: var(--hero-button-color-accent);
+    }
+}
+
+.subscribe .button svg {
+    padding-left: 10px;
+    fill: var(--primary-bg-color);
+}

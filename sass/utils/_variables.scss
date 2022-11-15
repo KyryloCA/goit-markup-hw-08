@@ -1,0 +1,21 @@
+:root {
+    --primary-content-color: #757575;
+    --secondary-content-color: #212121;
+    --accent-color: #2196f3;
+    --primary-bg-color: #ffffff;
+    --secondary-bg-color: #F5F4FA;
+    --icons-bg-color: #AFB1B8;
+    --hero-button-color: #2196f3;
+    --hero-button-color-accent: #188CE8;
+    --hero-background-color: #C4C4C4;
+    /* cubic-bezier(0.4, 0, 0.2, 1) */
+    --cubic-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* gallery */
+    --gallery-cards-gap: 30px;
+    --gallery-text-wrapper-padding-top-bottom: 18px;
+    --gallery-text-wrapper-padding-left-right: 24px;
+    /* gallery big */
+    --gallery-big-text-wrapper-padding-top-bottom: 30px;
+    --gallery-big-text-wrapper-padding-left-right: 30px;
+}

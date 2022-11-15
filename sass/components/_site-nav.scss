@@ -1,0 +1,154 @@
+header {
+    border-bottom: 1px solid #ECECEC;
+
+}
+
+.logo {
+    display: block;
+
+    color: #000000;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+}
+
+.header__logo {
+    margin-right: 93px;
+}
+
+
+.logo__span {
+    color: var(--accent-color);
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__list {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.site-nav {
+    display: flex;
+
+    letter-spacing: 0.02em;
+    font-weight: 500;
+}
+
+.contacts {
+    display: flex;
+
+    letter-spacing: 0.02em;
+    font-weight: 500;
+}
+
+.contacts {
+    margin-left: auto;
+}
+
+.contacts-footer {
+
+    line-height: 1.71;
+}
+
+.adress p {
+    color: var(--primary-bg-color);
+}
+
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contacts .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.site-nav .link {
+    color: var(--secondary-content-color);
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color var(--cubic-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
+}
+
+.contacts .link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-content-color);
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+
+    transition: color var(--cubic-function);
+
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
+}
+
+.contacts .icon {
+
+    margin-right: 10px;
+    text-align: center;
+    fill: currentColor;
+
+}
+
+
+
+.contacts-footer .link {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--cubic-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
+}
+
+
+
+.site-nav .active {
+    color: var(--accent-color);
+}
+
+.header__item .link.active::after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--hero-button-color);
+}
+
+
+
+.header__list .link.active {
+    position: relative;
+}
