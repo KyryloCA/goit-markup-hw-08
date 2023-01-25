@@ -77,69 +77,11 @@
     <!-- конец модального окна -->
 
 
-
-    <!-- Окно мобильного меню -->
-
-    <div class="mobile-menu-wrap is-hidden" data-menu>
-        <div class="menu-container">
-
-           <div class="menu-button-container">
-            <div class="mobile-menu-button mobile-menu-button--right " data-menu-close>
-                <svg class="icon" width="40px" height="40px" fill="currentColor" aria-hidden="true">
-                    <use href="images/symbol-defs.svg#icon-close"></use>
-                </svg>
-            </div>
-            </div>
-
-            
-                <ul class="menu__list menu-nav">
-                    <li class="menu__item item"><a href="index.html" class="link active">Студия</a></li>
-                    <li class="menu__item item"><a href="portfolio.html" class="link ">Портфолио</a></li>
-                    <li class="menu__item item"><a href="" class="link">Контакты</a></li>
-                </ul>
-            
-
-            <ul class="menu__list menu-contacts">
-                <li class="menu__item item tel"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-                <li class="menu__item item mai"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                
-            </ul>
-
-            <ul class="list menu-socials">
-                <li class="menu-socials__item"><a href="" class="instagramm">instagramm</a></li>
-                <li class="menu-socials__separator">|</li>
-                <li class="menu-socials__item"><a href="" class="twitter">twitter</a></li>
-                <li class="menu-socials__separator">|</li>
-                <li class="menu-socials__item"><a href="" class="facebook">facebook</a></li>
-                <li class="menu-socials__separator">|</li>
-                <li class="menu-socials__item"><a href="" class="linkedin">linkedin</a></li>
-            </ul>
-        
-        </div>
-    </div>
-
-
-    
-
-    <!-- Конец мобильного меню -->
-
-
-
     <!-- Шапка сайта -->
     <header class="header">
         <div class="container header__container">
-            
             <nav class="header__nav">
                 <a href="./index.html" class="logo header__logo"><span class="logo__span">Web</span>Studio</a>
-
-                <!-- <button type="button" class="mobile-menu-button" data-menu-open>Открыть</button> -->
-
-                <div class="mobile-menu-button" data-menu-open>
-                    <svg class="icon" width="40px" height="40px" fill="currentColor" aria-hidden="true">
-                        <use href="images/symbol-defs.svg#icon-menu"></use>
-                    </svg>
-                </div>
-
                 <ul class="header__list site-nav">
                     <li class="header__item item"><a href="index.html" class="link active">Студия</a></li>
                     <li class="header__item item"><a href="portfolio.html" class="link ">Портфолио</a></li>
@@ -158,8 +100,6 @@
                             <use href="images/symbol-defs.svg#smartphone"></use>
                         </svg>+38 096 111 11 11</a></li>
             </ul>
-
-            
        
         </div>
     </header>
@@ -533,3 +473,69 @@
 
 
 </html>
+
+
+<header class="header">
+
+    <div class="mob-menu is-hidden" data-menu>
+      <div class="container">
+        <div class="mob-menu__top">
+          <button type="button" class="menu-close-btn" data-menu-close>
+            X
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link" href="./about.html">About</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link" href="https://www.google.com/"
+                >Services and prices</a
+              >
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link" href="#barbers">Barbers</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link" href="https://www.google.com/"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mob-menu__bottom">
+          <div class="mob-connect">
+            <a class="mob-connect__tel link" href="tel:+380441111111"
+              >+38 044 111 11 11</a
+            >
+            <button
+              class="mob-connect__btn btn btn--dark"
+              data-modal-open
+              type="button"
+            >
+              On
+            </button>
+          </div>
+          <ul class="mob-soc list">
+            <li class="mob-soc__item">
+              <a
+                class="mob-soc__link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Instagram</a
+              >
+            </li>
+            <li class="mob-soc__item">
+              <a
+                class="mob-soc__link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>

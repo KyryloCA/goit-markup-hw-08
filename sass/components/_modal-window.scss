@@ -28,6 +28,12 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px;
+
+    @include up-to-desktop{
+        width: 450px;
+        height: 609px;
+    }
+
 }
 
 .backdrop.is-hidden .modal {
@@ -89,11 +95,20 @@
 
 .form-modal a {
     color: var(--hero-button-color);
+    @include up-to-desktop{
+        font-size: 12px;
+     
+    }
 }
 
 .form-modal .consent span {
     font-size: 14px;
     padding-left: 36px;
+
+    @include up-to-desktop{
+        font-size: 12px;
+        padding-left: 23px;
+    }
 }
 
 
@@ -102,7 +117,11 @@
     position: absolute;
     width: 16px;
     height: 15px;
-    margin-left: 12px;
+    
+    @include desktop{
+        margin-left: 12px;
+    }
+    
 }
 
 

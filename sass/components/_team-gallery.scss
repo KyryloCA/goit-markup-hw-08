@@ -9,12 +9,35 @@
 .gallery-flex-big .item {
     flex-basis: calc(100% / 4 - var(--gallery-cards-gap));
     /* margin-bottom: 30px; */
+
+    @include up-to-tablet{
+        flex-basis: calc(100% - var(--gallery-cards-gap));
+    }
+
+    @include tablet{
+        flex-basis: calc(100%/2 - var(--gallery-cards-gap));
+    }
+    
+    @include desktop{
+        flex-basis: calc(100%/4 - var(--gallery-cards-gap));
+    }
+
     margin-left: var(--gallery-cards-gap);
     margin-top: var(--gallery-cards-gap);
 
     align-items: center;
 
 
+}
+
+.gallery-flex-big .item img{
+    @include up-to-tablet{
+        width: 450px;
+    }
+
+    @include tablet{
+        width: 354px;
+    }
 }
 
 .alternate .gallery-flex-big .item {

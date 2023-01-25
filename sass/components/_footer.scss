@@ -9,6 +9,19 @@ footer {
 footer .container {
     display: flex;
     align-items: baseline;
+    
+
+    @include up-to-desktop{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 60px;
+    }
+    @include up-to-tablet{
+        flex-direction: column;
+      
+        align-items: center;
+        gap: 60px;
+    }
 }
 
 footer b {
@@ -30,8 +43,16 @@ footer b {
     margin-bottom: 20px;
 }
 
-.footer .wrapper {
-    display: flex;
+footer .wrapper {
+   
+
+    @include up-to-desktop{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 
 }
 
@@ -40,13 +61,23 @@ footer p {
     margin-bottom: 10px;
 }
 
+footer .adress{
+    @include up-to-desktop{
+        text-align: center;
+    }
+}
+
 
 footer .item:not(:last-child) {
     margin-bottom: 9px;
 }
 
 footer .connect {
-    margin-left: 70px;
+    
+    @include desktop{
+        margin-left: 70px;
+    }
+    
 }
 
 .socials {
@@ -130,13 +161,27 @@ footer .socials .icon {
 
 /* --------footer-subscribe------ */
 footer .subscribe {
-    margin-left: 93px;
+
+    @include desktop{
+        margin-left: 93px;
+    }
+  
 }
 
 .subscribe form {
     display: flex;
+
+   @include desktop{
     align-items: center;
     height: 50px;
+   }
+        @include up-to-desktop{
+flex-direction: column;
+height: 120px;
+gap: 20px;
+
+align-items: center;
+    }
 }
 
 .subscribe .mail {
