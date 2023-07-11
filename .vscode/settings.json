@@ -18,6 +18,5 @@
     "liveSassCompile.settings.generateMap": true,
     "liveSassCompile.settings.autoprefix": [
         "defaults"
-    ],
-    "editor.quickSuggestionsDelay": 300
+    ]
 }
