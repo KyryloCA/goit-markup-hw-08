@@ -1,42 +1,42 @@
 .list {
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .adress {
-    font-style: normal;
+  font-style: normal;
 }
 
 .icon {
-    fill: var(--icons-bg-color);
-    transition: fill var(--cubic-function);
+  fill: var(--icons-bg-color);
+  transition: fill var(--cubic-function);
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-    outline: 0;
-    outline-offset: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  outline: 0;
+  outline-offset: 0;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* .visualiser {
@@ -44,10 +44,27 @@ img {
 } */
 
 .container {
+  /* outline: 2px dashed greenyellow; */
+  padding-right: 15px;
+  padding-left: 15px;
+  @include mobile-360 {
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @include mobile {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include tablet {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include desktop {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    /* outline: 2px dashed greenyellow; */
-    padding-right: 15px;
-    padding-left: 15px;
+  }
 }
