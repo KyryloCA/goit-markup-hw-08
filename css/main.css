@@ -761,11 +761,6 @@ footer .subscribe {
   border: 1px solid var(--accent-color);
 }
 
-.subscribe .mail input:not(:-ms-input-placeholder) {
-  color: var(--primary-bg-color);
-  border: 1px solid var(--accent-color);
-}
-
 .subscribe .mail input:not(:placeholder-shown) {
   color: var(--primary-bg-color);
   border: 1px solid var(--accent-color);
