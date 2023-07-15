@@ -1,52 +1,55 @@
 .link p {
-    color: var(--primary-content-color);
-
+  color: var(--primary-content-color);
 }
 
 .gallery-flex {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(-1 * var(--gallery-cards-gap));
-    margin-left: calc(-1 * var(--gallery-cards-gap));
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gallery-cards-gap);
+}
 
+.gallery-flex img {
+  width: 100%;
 }
 
 .gallery-flex .item {
-    flex-basis: calc(100% / 3 - var(--gallery-cards-gap));
-    /* margin-bottom: 30px; */
-    margin-left: var(--gallery-cards-gap);
-    margin-top: var(--gallery-cards-gap);
-
-    align-items: center;
-
+  @include mobile-360 {
+    flex-basis: 100%;
+  }
+  @include mobile {
+    flex-basis: 100%;
+  }
+  @include tablet {
+    flex-basis: calc((100% - var(--gallery-cards-gap)) / 2);
+  }
+  @include desktop {
+    flex-basis: calc((100% - 2 * var(--gallery-cards-gap)) / 3);
+  }
+  align-items: center;
 }
 
 .gallery-flex .item .link {
-    display: block;
-    transition: box-shadow var(--cubic-function);
+  display: block;
+  transition: box-shadow var(--cubic-function);
 }
-
 
 .gallery-flex .item a:hover,
 .gallery-flex .item a:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-
-
 .gallery-flex .wrapper {
-    padding-top: var(--gallery-text-wrapper-padding-top-bottom);
-    padding-bottom: var(--gallery-text-wrapper-padding-top-bottom);
-    padding-left: var(--gallery-text-wrapper-padding-left-right);
-    padding-right: var(--gallery-text-wrapper-padding-left-right);
+  padding-top: var(--gallery-text-wrapper-padding-top-bottom);
+  padding-bottom: var(--gallery-text-wrapper-padding-top-bottom);
+  padding-left: var(--gallery-text-wrapper-padding-left-right);
+  padding-right: var(--gallery-text-wrapper-padding-left-right);
 }
 
 .gallery-flex .bottom-border {
-
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 /* 
@@ -58,88 +61,90 @@
     margin-bottom: 0;
 } */
 
-
-
 .gallery h2 {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 .gallery p {
-    font-size: 16px;
-    line-height: 1.88;
+  font-size: 16px;
+  line-height: 1.88;
 }
 
 .gallery-nav {
-    margin-top: 0;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
 }
-
-.gallery-nav .item:not(:last-child) {
-    margin-right: 8px;
-}
-
-//ці стилі або за межами галереї
 
 .portfolio {
+  @include mobile-360 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @include mobile {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include desktop {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
 }
 
 .portfolio p,
 .portfolio h2 {
-    margin: 0;
+  margin: 0;
 }
 
 .portfolio h2 {
-    margin-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 /* -------galery overlay---------- */
 
 a .card-thumb {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: translate(0, 100%);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 24px;
-    background-color: rgba(33, 150, 243, 0.9);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(0, 100%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  background-color: rgba(33, 150, 243, 0.9);
 
-    overflow: hidden;
-    transition: transform var(--cubic-function);
+  overflow: hidden;
+  transition: transform var(--cubic-function);
 
-    .gallery-flex .item a:hover &,
-    .gallery-flex .item a:focus & {
-        transform: translate(0);
-    }
-
-
+  .gallery-flex .item a:hover &,
+  .gallery-flex .item a:focus & {
+    transform: translate(0);
+  }
 }
 
 .gallery .overlay p {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 
-    font-size: 18px;
-    line-height: 1.55;
-    color: var(--primary-bg-color);
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--primary-bg-color);
 }
-
-
-
 
 /* -----end-of-overlay----- */

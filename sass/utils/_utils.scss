@@ -43,6 +43,25 @@ img {
     outline: 2px dashed blueviolet;
 } */
 
+// .container {
+//   @include up-to-tablet {
+//     width: 480px;
+//   }
+//   @include tablet {
+//     width: 768px;
+//   }
+//   @include desktop {
+//     width: 1200px;
+//   }
+
+//   margin-left: auto;
+//   margin-right: auto;
+//   /* outline: 2px dashed greenyellow; */
+
+//   padding-right: 15px;
+//   padding-left: 15px;
+// }
+
 .container {
   /* outline: 2px dashed greenyellow; */
   padding-right: 15px;
