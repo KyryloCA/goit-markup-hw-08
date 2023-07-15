@@ -1,286 +1,483 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.min.css">
-</head>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
 
-<body>
-    <!-- Шапка сайта -->
-    <header class="header">
-        <div class="container header__container">
-            <nav class="header__nav">
-                <a href="./index.html" class="logo header__logo"><span class="logo__span">Web</span>Studio</a>
-                <ul class="header__list site-nav">
-                    <li class="header__item item"><a href="index.html" class="link">Студия</a></li>
-                    <li class="header__item item"><a href="portfolio.html" class="link active">Портфолио</a></li>
-                    <li class="header__item item"><a href="" class="link">Контакты</a></li>
-                </ul>
-            </nav>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
 
-            <ul class="header__list contacts">
-                <li class="header__item item"><a href="mailto:info@devstudio.com" class="link">
-                        <svg class="icon" width="16px" height="12px" aria-hidden="true">
-                            <use href="images/symbol-defs.svg#envelope-hover"></use>
-                        </svg>
-                        info@devstudio.com</a></li>
-                <li class="header__item item"><a href="tel:+380961111111" class="link"><svg class="icon" width="10px"
-                            height="16px" aria-hidden="true">
-                            <use href="images/symbol-defs.svg#smartphone"></use>
-                        </svg>+38 096 111 11 11</a></li>
-            </ul>
+  <body>
+    <!-- mobile menu -->
+    <div class="mobile-menu-wrap is-hidden" data-menu>
+      <div class="menu-container">
+        <div class="menu-button-container">
+          <div
+            class="mobile-menu-button mobile-menu-button--right"
+            data-menu-close
+          >
+            <svg
+              class="icon"
+              width="40px"
+              height="40px"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <use href="images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </div>
         </div>
+
+        <ul class="menu__list menu-nav">
+          <li class="menu__item item">
+            <a href="index.html" class="link">Studio</a>
+          </li>
+          <li class="menu__item item">
+            <a href="portfolio.html" class="link active">Portfolio</a>
+          </li>
+          <li class="menu__item item"><a href="" class="link">Contacts</a></li>
+        </ul>
+
+        <ul class="menu__list menu-contacts">
+          <li class="menu__item item tel">
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+          </li>
+          <li class="menu__item item mai">
+            <a href="mailto:info@devstudio.com" class="link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="list menu-socials">
+          <li class="menu-socials__item">
+            <a href="" class="instagramm">Instagram</a>
+          </li>
+          <li class="menu-socials__separator">|</li>
+          <li class="menu-socials__item">
+            <a href="" class="twitter">Twitter</a>
+          </li>
+          <li class="menu-socials__separator">|</li>
+          <li class="menu-socials__item">
+            <a href="" class="facebook">Facebook</a>
+          </li>
+          <li class="menu-socials__separator">|</li>
+          <li class="menu-socials__item">
+            <a href="" class="linkedin">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- End of mobile menu -->
+
+    <!-- Website header -->
+    <header class="header">
+      <div class="container header__container">
+        <nav class="header__nav">
+          <a href="./index.html" class="logo header__logo"
+            ><span class="logo__span">Web</span>Studio</a
+          >
+
+          <!-- <button type="button" class="mobile-menu-button" data-menu-open>Open</button> -->
+
+          <div class="mobile-menu-button" data-menu-open>
+            <svg
+              class="icon"
+              width="40px"
+              height="40px"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <use href="images/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </div>
+
+          <ul class="header__list site-nav">
+            <li class="header__item item">
+              <a href="index.html" class="link">Studio</a>
+            </li>
+            <li class="header__item item">
+              <a href="portfolio.html" class="link active">Portfolio</a>
+            </li>
+            <li class="header__item item">
+              <a href="" class="link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header__list contacts">
+          <li class="header__item item">
+            <a href="mailto:info@devstudio.com" class="link">
+              <svg class="icon" width="16px" height="12px" aria-hidden="true">
+                <use href="images/symbol-defs.svg#envelope-hover"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="header__item item">
+            <a href="tel:+380961111111" class="link"
+              ><svg class="icon" width="10px" height="16px" aria-hidden="true">
+                <use href="images/symbol-defs.svg#smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
+    <!--  End of website header  -->
     <main>
-        <!-- Портфолио -->
-        <section class="section portfolio">
-            <div class="container">
-                <ul class="list gallery-nav">
-                    <li class="item"><button type="button" class="button primary button-gallery">Все</button></li>
-                    <li class="item"><button type="button" class="button secondary button-gallery">Веб-сайты</button>
-                    </li>
-                    <li class="item"><button type="button" class="button secondary button-gallery">Приложения</button>
-                    </li>
-                    <li class="item"><button type="button" class="button secondary button-gallery">Дизайн</button></li>
-                    <li class="item"><button type="button" class="button secondary button-gallery">Маркетинг</button>
-                    </li>
-
-                </ul>
-                <ul class="list gallery gallery-flex">
-                    <li class="item">
-                        <a href="" class="link">
-                            <div class="card-thumb">
-                                <img src="./images/technoduck.jpg" alt="Технокряк" width="370">
-                                <div class="overlay">
-                                    <p>Ресурс предлагает комплексные предложения с разным уровнем
-                                        функционала и сервисов. Все это позволит посетителю получить исчерпывающие
-                                        сведения о компании или частном лице.</p>
-                                </div>
-                            </div>
-                            <div class="wrapper bottom-border">
-                                <h2 class="title">Технокряк</h2>
-                                <p>Веб-сайт</p>
-                            </div>
-
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="" class="link">
-                            <div class="card-thumb">
-                                <img src="./images/poster-new-orlean-vs-golden-star.jpg"
-                                    alt="Постер New Orlean vs Golden Star" width="370">
-                                <div class="overlay">
-                                    <p>Ресурс предлагает комплексные предложения с разным уровнем
-                                        функционала и сервисов. Все это позволит посетителю получить исчерпывающие
-                                        сведения о компании или частном лице.</p>
-                                </div>
-                            </div>
-                            <div class="wrapper bottom-border">
-                                <h2 class="title">Постер New Orlean vs Golden Star</h2>
-                                <p>Дизайн</p>
-                            </div>
-
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="" class="link">
-                            <div class="card-thumb">
-                                <img src="./images/seafood-restaurant.jpg" alt="Ресторан Seafood" width="370">
-                                <div class="overlay">
-                                    <p>Ресурс предлагает комплексные предложения с разным уровнем
-                                        функционала и сервисов. Все это позволит посетителю получить исчерпывающие
-                                        сведения о компании или частном лице.</p>
-                                </div>
-                            </div>
-                            <div class="wrapper bottom-border">
-                                <h2 class="title">Ресторан Seafood</h2>
-                                <p>Приложение</p>
-                            </div>
-
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="" class="link">
-                            <div class="card-thumb">
-                                <img src="./images/project-prime.jpg" alt="Проект Prime" width="370">
-                                <div class="overlay">
-                                    <p>Ресурс предлагает комплексные предложения с разным уровнем
-                                        функционала и сервисов. Все это позволит посетителю получить исчерпывающие
-                                        сведения о компании или частном лице.</p>
-                                </div>
-                            </div>
-                            <div class="wrapper bottom-border">
-                                <h2 class="title">Проект Prime</h2>
-                                <p>Маркетинг</p>
-                            </div>
-
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="" class="link">
-                            <div class="card-thumb">
-                                <img src="./images/project-boxes.jpg" alt="Проект Boxes" width="370">
-                                <div class="overlay">
-                                    <p>Ресурс предлагает комплексные предложения с разным уровнем
-                                        функционала и сервисов. Все это позволит посетителю получить исчерпывающие
-                                        сведения о компании или частном лице.</p>
-                                </div>
-                            </div>
-                            <div class="wrapper bottom-border">
-                                <h2 class="title">Проект Boxes</h2>
-                                <p>Приложение</p>
-                            </div>
-
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="" class="link">
-                            <div class="card-thumb">
-                                <img src="./images/inspiration-has-no-borders.jpg" alt="Inspiration has no Borders"
-                                    width="370">
-                                <div class="overlay">
-                                    <p>Ресурс предлагает комплексные предложения с разным уровнем
-                                        функционала и сервисов. Все это позволит посетителю получить исчерпывающие
-                                        сведения о компании или частном лице.</p>
-                                </div>
-                            </div>
-                            <div class="wrapper bottom-border">
-                                <h2 class="title">Inspiration has no Borders</h2>
-                                <p>Веб-сайт</p>
-                            </div>
-
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="" class="link">
-                            <div class="card-thumb">
-                                <img src="./images/limited-edition.jpg" alt="Издание Limited Edition" width="370">
-                                <div class="overlay">
-                                    <p>Ресурс предлагает комплексные предложения с разным уровнем
-                                        функционала и сервисов. Все это позволит посетителю получить исчерпывающие
-                                        сведения о компании или частном лице.</p>
-                                </div>
-                            </div>
-                            <div class="wrapper bottom-border">
-                                <h2 class="title">Издание Limited Edition</h2>
-                                <p>Дизайн</p>
-                            </div>
-
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="" class="link">
-                            <div class="card-thumb">
-                                <img src="./images/project-lab.jpg" alt="Проект LAB" width="370">
-                                <div class="overlay">
-                                    <p>Ресурс предлагает комплексные предложения с разным уровнем
-                                        функционала и сервисов. Все это позволит посетителю получить исчерпывающие
-                                        сведения о компании или частном лице.</p>
-                                </div>
-                            </div>
-                            <div class="wrapper bottom-border">
-                                <h2 class="title">Проект LAB</h2>
-                                <p>Маркетинг</p>
-                            </div>
-
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="" class="link">
-                            <div class="card-thumb">
-                                <img src="./images/growing-business.jpg" alt="Growing Business" width="370">
-                                <div class="overlay">
-                                    <p>Ресурс предлагает комплексные предложения с разным уровнем
-                                        функционала и сервисов. Все это позволит посетителю получить исчерпывающие
-                                        сведения о компании или частном лице.</p>
-                                </div>
-                            </div>
-                            <div class="wrapper bottom-border">
-                                <h2 class="title">Growing Business</h2>
-                                <p>Приложение</p>
-                            </div>
-
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+      <!-- Portfolio -->
+      <section class="section portfolio">
+        <div class="container">
+          <ul class="list gallery-nav">
+            <li class="item">
+              <button type="button" class="button primary button-gallery">
+                All
+              </button>
+            </li>
+            <li class="item">
+              <button type="button" class="button secondary button-gallery">
+                Web-sites
+              </button>
+            </li>
+            <li class="item">
+              <button type="button" class="button secondary button-gallery">
+                Apps
+              </button>
+            </li>
+            <li class="item">
+              <button type="button" class="button secondary button-gallery">
+                Design
+              </button>
+            </li>
+            <li class="item">
+              <button type="button" class="button secondary button-gallery">
+                Marketing
+              </button>
+            </li>
+          </ul>
+          <ul class="list gallery gallery-flex">
+            <li class="item">
+              <a href="" class="link">
+                <div class="card-thumb">
+                  <img
+                    src="./images/technoduck.jpg"
+                    alt="Technoduck"
+                    width=""
+                  />
+                  <div class="overlay">
+                    <p>
+                      Technoduck is a state-of-the-art coronavirus distribution
+                      platform. Companies use this platform for digital
+                      espionage and attacks on competitors' secure servers.
+                    </p>
+                  </div>
+                </div>
+                <div class="wrapper bottom-border">
+                  <h2 class="title">Technoduck</h2>
+                  <p>Web-site</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                <div class="card-thumb">
+                  <img
+                    src="./images/poster-new-orlean-vs-golden-star.jpg"
+                    alt="Poster New Orlean vs Golden Star"
+                    width=""
+                  />
+                  <div class="overlay">
+                    <p>
+                      Poster New Orlean vs Golden Star is a captivating visual
+                      representation that showcases the clash of two legendary
+                      basketball teams. It captures the spirit of competition,
+                      skill, and excitement in a vibrant and dynamic way.
+                    </p>
+                  </div>
+                </div>
+                <div class="wrapper bottom-border">
+                  <h2 class="title">Poster New Orlean vs Golden Star</h2>
+                  <p>Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                <div class="card-thumb">
+                  <img
+                    src="./images/seafood-restaurant.jpg"
+                    alt="Restaurant Seafood"
+                    width=""
+                  />
+                  <div class="overlay">
+                    <p>
+                      Restaurant Seafood is a culinary paradise specializing in
+                      exquisite seafood dishes. From fresh catches of the day to
+                      mouthwatering delicacies, this restaurant offers a
+                      delightful dining experience with a focus on quality and
+                      taste.
+                    </p>
+                  </div>
+                </div>
+                <div class="wrapper bottom-border">
+                  <h2 class="title">Restaurant Seafood</h2>
+                  <p>App</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                <div class="card-thumb">
+                  <img
+                    src="./images/project-prime.jpg"
+                    alt="Project Prime"
+                    width=""
+                  />
+                  <div class="overlay">
+                    <p>
+                      Project Prime is an ambitious and groundbreaking
+                      initiative that aims to revolutionize the way people
+                      access and consume digital content. It combines
+                      cutting-edge technology with user-friendly interfaces,
+                      providing a seamless and immersive experience.
+                    </p>
+                  </div>
+                </div>
+                <div class="wrapper bottom-border">
+                  <h2 class="title">Project Prime</h2>
+                  <p>Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                <div class="card-thumb">
+                  <img
+                    src="./images/project-boxes.jpg"
+                    alt="Project Boxes"
+                    width=""
+                  />
+                  <div class="overlay">
+                    <p>
+                      Project Boxes is a versatile and intuitive application
+                      that simplifies organization and storage. With its
+                      innovative features and user-friendly interface, it offers
+                      a seamless solution for managing and categorizing various
+                      items, whether physical or digital.
+                    </p>
+                  </div>
+                </div>
+                <div class="wrapper bottom-border">
+                  <h2 class="title">Project Boxes</h2>
+                  <p>App</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                <div class="card-thumb">
+                  <img
+                    src="./images/inspiration-has-no-borders.jpg"
+                    alt="Inspiration has no Borders"
+                    width=""
+                  />
+                  <div class="overlay">
+                    <p>
+                      Inspiration has no Borders is a captivating and
+                      thought-provoking website that celebrates the boundless
+                      nature of creativity. It showcases inspiring works of art,
+                      stories of resilience, and innovative ideas that transcend
+                      geographical and cultural boundaries.
+                    </p>
+                  </div>
+                </div>
+                <div class="wrapper bottom-border">
+                  <h2 class="title">Inspiration has no Borders</h2>
+                  <p>Web-site</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                <div class="card-thumb">
+                  <img
+                    src="./images/limited-edition.jpg"
+                    alt="Limited Edition"
+                    width=""
+                  />
+                  <div class="overlay">
+                    <p>
+                      Limited Edition is a collector's dream, featuring a
+                      meticulously curated selection of exclusive and
+                      limited-edition items. From rare books to artist
+                      collaborations, each piece is a testament to
+                      craftsmanship, uniqueness, and timeless appeal.
+                    </p>
+                  </div>
+                </div>
+                <div class="wrapper bottom-border">
+                  <h2 class="title">Limited Edition</h2>
+                  <p>Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                <div class="card-thumb">
+                  <img
+                    src="./images/project-lab.jpg"
+                    alt="Project LAB"
+                    width=""
+                  />
+                  <div class="overlay">
+                    <p>
+                      Project LAB is a dynamic and collaborative marketing
+                      project that brings together creative minds and
+                      cutting-edge strategies. It aims to explore new
+                      possibilities, experiment with innovative techniques, and
+                      deliver impactful campaigns that resonate with the target
+                      audience.
+                    </p>
+                  </div>
+                </div>
+                <div class="wrapper bottom-border">
+                  <h2 class="title">Project LAB</h2>
+                  <p>Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                <div class="card-thumb">
+                  <img
+                    src="./images/growing-business.jpg"
+                    alt="Growing Business"
+                    width=""
+                  />
+                  <div class="overlay">
+                    <p>
+                      Growing Business is a comprehensive and user-friendly
+                      application designed to streamline business operations and
+                      foster growth. From managing finances to optimizing
+                      workflows, it provides valuable tools and insights to help
+                      businesses thrive and succeed.
+                    </p>
+                  </div>
+                </div>
+                <div class="wrapper bottom-border">
+                  <h2 class="title">Growing Business</h2>
+                  <p>App</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="container">
-            <div class="wrapper">
-                <a href="./index.html" class="logo footer__logo"><span class="logo__span">Web</span>Studio</a>
-                <address class="adress">
-                    <p class="contacts-footer">
-                        г. Киев, пр-т Леси Украинки, 26
-                    </p>
-                    <ul class="list contacts-footer">
-                        <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                        <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-                    </ul>
-                </address>
-            </div>
-            <div class="wrapper connect">
-                <b>Присоединяйтесь</b>
-                <ul class="list socials">
-                    <li class="socials-item">
-                        <a href="" class="instagramm">
-                            <svg class="icon" aria-hidden="true" width="20px" height="20px">
-                                <use href="images/symbol-defs.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="socials-item"><a href="" class="twitter">
-                            <svg class="icon" aria-hidden="true" width="20px" height="20px">
-                                <use href="images/symbol-defs.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="socials-item"><a href="" class="facebook">
-                            <svg class="icon" aria-hidden="true" width="20px" height="20px">
-                                <use href="images/symbol-defs.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="socials-item"><a href="" class="linkedin">
-                            <svg class="icon" aria-hidden="true" width="20px" height="20px">
-                                <use href="images/symbol-defs.svg#linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="wrapper subscribe">
-                <b>Подпишитесь на рассылку</b>
-                <form class="js-speaker-form">
-                    <label class="mail">
-                        <input type="email" name="subscribe-email" placeholder="E-mail">
-                    </label>
-                    <button class="button primary subscribe-action" type="submit">
-                        <span>Подписаться</span>
-                        <svg class="icon" aria-hidden="true" width="32px" height="32px">
-                            <use href="images/symbol-defs.svg#icon-send"></use>
-                        </svg>
-                    </button>
-                </form>
-            </div>
+      <div class="container">
+        <div class="wrapper">
+          <a href="./index.html" class="logo footer__logo"
+            ><span class="logo__span">Web</span>Studio</a
+          >
+          <address class="adress">
+            <p class="contacts-footer">695 Park Ave, NY 10065, USA</p>
+            <ul class="list contacts-footer">
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="item">
+                <a href="tel:+12127724150" class="link">+1 212-772-4150</a>
+              </li>
+            </ul>
+          </address>
         </div>
+        <div class="wrapper connect">
+          <b>FIND US ON</b>
+          <ul class="list socials">
+            <li class="socials-item">
+              <a href="" class="instagramm">
+                <svg class="icon" aria-hidden="true" width="20px" height="20px">
+                  <use href="images/symbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a href="" class="twitter">
+                <svg class="icon" aria-hidden="true" width="20px" height="20px">
+                  <use href="images/symbol-defs.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a href="" class="facebook">
+                <svg class="icon" aria-hidden="true" width="20px" height="20px">
+                  <use href="images/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a href="" class="linkedin">
+                <svg class="icon" aria-hidden="true" width="20px" height="20px">
+                  <use href="images/symbol-defs.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="wrapper subscribe">
+          <b>Subscribe to the newsletter</b>
+          <form class="js-speaker-form">
+            <label class="mail">
+              <input type="email" name="subscribe-email" placeholder="E-mail" />
+            </label>
+            <button class="button primary subscribe-action" type="submit">
+              <span>Subscribe</span>
+              <svg class="icon" aria-hidden="true" width="32px" height="32px">
+                <use href="images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
     </footer>
-</body>
 
+    <script src="js/menu.js"></script>
+
+    <script>
+      (() => {
+        document
+          .querySelector(".js-speaker-form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`)
+            );
+
+            e.currentTarget.reset();
+          });
+      })();
+    </script>
+  </body>
 </html>
